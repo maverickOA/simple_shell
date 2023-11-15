@@ -12,7 +12,7 @@ void print_number(int number)
 	tmp = number;
 	if (number < 0)
 	{
-		_putchar('-', STDERR_FILENO);
+		always_print('-', STDERR_FILENO);
 		number = (number * -1) - 1;
 	}
 	while (first != 0)
@@ -31,16 +31,16 @@ void print_number(int number)
 		}
 		if (tmp < 0 && x == count)
 		{
-			_putchar(((first % 10) + 48) + 1, STDERR_FILENO);
+			always_print(((first % 10) + 48) + 1, STDERR_FILENO);
 		}
 		else
 		{
-			_putchar((first % 10) + 48, STDERR_FILENO);
+			always_print((first % 10) + 48, STDERR_FILENO);
 		}
 		x++;
 	}
 	if (count == 0)
 	{
-		_putchar('0', STDERR_FILENO);
+		always_print('0', STDERR_FILENO);
 	}
 }
