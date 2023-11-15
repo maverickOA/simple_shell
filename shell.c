@@ -25,7 +25,7 @@ int main(int argc __attribute__((unused)), char *argv[], char *env[])
 
 	signal(SIGINT, handle_sigint);
 	env_clone = _getenvs(env);
-	_setenv(SHLVL_NAME, SHLVL_VAL, IGNORE);
+	_setenv(SHLVL_NAME, SHLVL_NAME, IGNORE);
 	envpath = _loadpaths(head);
 	for (; ;)
 	{
