@@ -14,7 +14,7 @@ env_node_t *_findnode(env_node_t *head, char *name)
 	env_node_t *current = NULL;
 
 	current = head;
-	while (current->next != NULL)
+	while (current != NULL)
 	{
 		if (_strcmp(current->name, name) == EQUAL_STRING)
 		{
@@ -24,4 +24,5 @@ env_node_t *_findnode(env_node_t *head, char *name)
 	}
 	return (NULL);
 }
+
 
