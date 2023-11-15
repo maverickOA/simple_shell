@@ -61,7 +61,7 @@ int execute_command(char **commands, int commands_executed
 , char *program, char **env);
 void print_error(int commands_executed, int param_count, ...);
 void print_number(int number);
-int _putchar(char character, int file_descriptor);
+int always_print(char character, int file_descriptor);
 void handle_sigint(int signum);
 int _checkfile(char *path);
 int _isrelpath(char *path);
