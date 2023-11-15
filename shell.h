@@ -29,7 +29,7 @@ typedef struct env_node
 	char *value;
 	struct env_node *next;
 } env_node_t;
-
+#define EQUAL_STRING 0
 #define INTERACTIVE_MODE 1
 #define NON_INTERACTIVE_MODE 0
 #define NULL_FOUND -2
